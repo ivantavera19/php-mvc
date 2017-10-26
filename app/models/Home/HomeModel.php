@@ -17,7 +17,7 @@ class HomeModel extends Model
   */
   public function getUser($id)
   {
-    return $this->db->query("SELECT * FROM `usuario` WHERE `id_dev` = $id")->fetch_array(MYSQLI_ASSOC);
+    return $this->db->query("SELECT * FROM `clients` WHERE `id` = $id")->fetch_array(MYSQLI_ASSOC);
   }
 
 }
